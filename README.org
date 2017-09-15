@@ -1,0 +1,31 @@
+#+TITLE: Guguji Python API
+咕咕机 Python API
+* 支持功能
+- 打印纯文本
+- 打印图片
+- 根据网页地址打印网页截图
+- 根据HTML Source 打印网页截图，可利用HTML与CSS打印富文本
+* 安装说明
+* 使用说明
+* 富文件打印建议
+** 不同字号一行可打印汉字数
+#+BEGIN_SRC html
+<span style='font-size:46px;font-family: "Microsoft YaHei";'>
+        一二三四五六七八
+</span>
+<span style='font-size:36px;font-family: "Microsoft YaHei";'>
+       一二三四五六七八九十
+</span>
+<span style='font-size:26px;font-family: "Microsoft YaHei";'>
+     一二三四五六七八九十一二三四 
+</span>
+<span style='font-size:23px;font-family: "Microsoft YaHei";'>
+      一二三四五六七八九十一二三四五六 
+</span>
+<span style='font-size:20px;font-family: "Microsoft YaHei";'>
+      一二三四五六七八九十一二三四五六七八
+</span>
+<span style='font-size:18px;font-family: "Microsoft YaHei";'>
+      一二三四五六七八九十一二三四五六七八九十
+</span>
+#+END_SRC
