@@ -70,3 +70,5 @@ m.print_img_with_html_source(html)
       一二三四五六七八九十一二三四五六七八九十
 </span>
 #+END_SRC
+效果：
+[[https://raw.githubusercontent.com/auzn/Guguji/master/fontsize46-36-26-23-20-18.png]]
