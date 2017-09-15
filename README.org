@@ -15,13 +15,20 @@ pip intall Guguji
 #+BEGIN_SRC  python
 import Guguji
 
-g = Guguji.Guguji(device_id ='{device_id}',user_id='{user_id}',ak='{ak}')
 # device_id 必填,双击设备吐出来的设备编号
 # user_id 选填，用户唯一标识符 (用户自定义字符串)
 # ak 选填，目前有默认access key，建议自己申请
+g = Guguji.Guguji(device_id ='{device_id}',user_id='{user_id}',ak='{ak}')
+
+#打印纯文本
 g.print_text('Hello World!')
-m.print_img('c:/example.jpg')
-m.print_img_from_url('http://www.baidu.com')
+
+#打印图片
+g.print_img('c:/example.jpg')
+
+#根据网页地址打印网页截图
+g.print_img_from_url('http://www.baidu.com')
+
 
 html = """
 <!Doctype html>
@@ -46,7 +53,16 @@ html = """
 
 </html>
 """
-m.print_img_with_html_source(html)
+#根据HTML Source 打印网页截图，可利用HTML与CSS打印富文本
+g.print_img_with_html_source(html)
+
+#组合打印
+m = Guguji.Messages()
+m.append_text('Hello World!')
+m.append_img('c://example.jpg')
+m.append_img_from_url('http://www.baidu.com')
+m.append_img_with_html_sorce(html)
+g.print_msgs(m)
 #+END_SRC
 * 富文件打印建议
 ** 不同字号一行可打印汉字数
