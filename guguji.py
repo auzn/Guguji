@@ -149,7 +149,7 @@ html {
         }
     '''
 
-    def __init__(self, ak, device_id, user_id=''):
+    def __init__(self, device_id, user_id='', ak='c7548afbab99479e9f9a59aa1d65d5c6'):
         self._device_id = device_id
         self._ak = ak
         self.__session = requests.session()
