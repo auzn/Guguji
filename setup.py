@@ -2,7 +2,7 @@
 from setuptools import setup
 setup(
     name='Guguji',
-    version='0.1.1',
+    version='0.1.2',
     description='A python api for memobird guguji',
     author='auzn',
     author_email='auzn.cn@gmail.com',
