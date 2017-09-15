@@ -12,7 +12,7 @@ pip intall Guguji
 网址转图片、网页源代码转图片用到[[https://github.com/jarrekk/imgkit][imgkit]] 工具，imgkit调用[[https://wkhtmltopdf.org/][wkhtmltopdf]] 进行转换。因此需安装wkhtmltopdf工具。
 安装方法请参考 [[https://github.com/pdfkit/pdfkit/wiki/Installing-WKHTMLTOPDF][wiki]]
 * 使用说明
-#+BEGIN_SRC  python
+#+BEGIN_SRC python
 import Guguji
 
 # device_id 必填,双击设备吐出来的设备编号
