@@ -13,6 +13,7 @@ pip intall Guguji
 安装方法请参考 [[https://github.com/pdfkit/pdfkit/wiki/Installing-WKHTMLTOPDF][wiki]]
 * 使用说明
 #+BEGIN_SRC python
+rO
 import Guguji
 
 # device_id 必填,双击设备吐出来的设备编号
