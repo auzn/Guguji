@@ -73,10 +73,12 @@ class Messages(object):
         return "|".join(encoded)
 
     def _ensure_gbk(self, txt):
+        '''
         try:
             txt = txt.decode('utf-8')
         except (UnicodeEncodeError, UnicodeDecodeError):
             pass
+        '''
         return txt.encode('GBK')
 
 

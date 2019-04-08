@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 setup(
     name='Guguji',
-    version='0.1.5',
+    version='0.1.6',
     description='A python api for memobird guguji',
     packages=find_packages(),
     py_modules=['Guguji'],
