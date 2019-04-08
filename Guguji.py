@@ -1,4 +1,4 @@
-#-*-coding:utf-8-*-
+# -*-coding:utf-8-*-
 
 from base64 import b64encode
 from datetime import datetime
@@ -192,17 +192,39 @@ html {
         m.append_img(file_path)
         return self.print_msgs(m)
 
-    def print_img_from_url(self, url):
+    def print_from_url(self, url):
         """打印网页截图"""
         m = Messages()
         m.append_img_from_url(url)
         return self.print_msgs(m)
 
-    def print_img_with_html_source(self, html_source):
+    def print_from_html(self, html_source):
         """打印富文本/HTML源代码"""
         m = Messages()
         m.append_img_with_html_sorce(html_source)
         return self.print_msgs(m)
+
+    def print_from_url_offical_api(self, url):
+        """打印网页截图"""
+        r = self._request(
+            '/printpaperFromUrl',
+            data={
+                'printUrl': url,
+                'memobirdID': self._device_id,
+                'userID': self.user_id
+            })
+        return r['printcontentid']
+
+    def print_from_html_offical_api(self, html_source):
+        """打印富文本/HTML源代码"""
+        r = self._request(
+            '/printpaperFromHtml',
+            data={
+                'printUrl': html_source,
+                'memobirdID': self._device_id,
+                'userID': self.user_id
+            })
+        return r['printcontentid']
 
     def is_msgs_printed(self, msgs_id):
         """请求打印状态"""

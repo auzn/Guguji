@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
 setup(
     name='Guguji',
-    version='0.1.4',
+    version='0.1.5',
     description='A python api for memobird guguji',
     packages=find_packages(),
     py_modules=['Guguji'],
