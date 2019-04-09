@@ -72,7 +72,7 @@ m.append_img_from_url('http://www.baidu.com')
 m.append_img_with_html_sorce(html)
 g.print_msgs(m)
 #+END_SRC
-* 富文件打印建议
+* 富文本打印建议
 ** 不同字号一行可打印汉字数
 #+BEGIN_SRC html
 <span style='font-size:46px;font-family: "Microsoft YaHei";'>
