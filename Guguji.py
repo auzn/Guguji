@@ -180,7 +180,7 @@ html {
                 'memobirdID': self._device_id,
                 'userID': self.user_id
             })
-        return r['printcontentid']
+        return r
 
     def print_text(self, text):
         """打印纯文本"""
@@ -215,7 +215,7 @@ html {
                 'memobirdID': self._device_id,
                 'userID': self.user_id
             })
-        return r['printcontentid']
+        return r
 
     def print_from_html_offical_api(self, html_source):
         """打印富文本/HTML源代码"""
@@ -226,7 +226,7 @@ html {
                 'memobirdID': self._device_id,
                 'userID': self.user_id
             })
-        return r['printcontentid']
+        return r
 
     def is_msgs_printed(self, msgs_id):
         """请求打印状态"""
